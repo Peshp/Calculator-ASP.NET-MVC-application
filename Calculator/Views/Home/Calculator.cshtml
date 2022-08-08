@@ -1,0 +1,18 @@
+﻿<h1 class ="text-red">Web Calculator</h1>
+
+<h>
+    How to work with calculator:   
+</h>
+<p>1. Enter for first number only numbers and floating numbers</p>
+<p>2. Enter for operation one of this symbols "+, -, /, %, *"</p>
+<j>3. Enter for second number only numbers and floating numbers</j>
+
+<form method="POST" class="mt-5">
+    <input type="text" placeholder="Enter number" name="firstNumber" pattern="^\d+\.?\d*$"/>
+    <input type="text" placeholder="Enter operation" name="operation" />
+    <input type="text" placeholder="Enter second number" name="secondNumber" pattern="^\d+\.?\d*$"/>
+
+    <input type="submit" value="Submit" />
+</form>
+
+<h1 class ="text-black mt-3">Result: @ViewBag.Result</h1>
